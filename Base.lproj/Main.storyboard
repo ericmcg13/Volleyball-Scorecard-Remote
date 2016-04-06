@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Volleyball_Scorecard_Remote" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DYg-hJ-mvb">
+                                <rect key="frame" x="573" y="112" width="125" height="125"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="crE-gX-gEH"/>
+                                    <constraint firstAttribute="height" constant="125" id="f3j-U5-hAm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <state key="normal" title="⊕">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="teamTwoScore:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1XX-6P-dJ8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team Name Number 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0r-mx-ZVD">
+                                <rect key="frame" x="30" y="60" width="179" height="22"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team Name Number 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vw6-vM-Z1z">
+                                <rect key="frame" x="544" y="60" width="182" height="22"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBA-KO-xOo">
+                                <rect key="frame" x="344" y="360" width="49" height="34"/>
+                                <animations/>
+                                <state key="normal" title="Oops!">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.25306165540540543" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="oopsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wYi-GO-tgm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set 5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7uK-1M-Iy6">
+                                <rect key="frame" x="339" y="28" width="59" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p4W-cZ-9b4">
+                                <rect key="frame" x="95" y="252" width="50" height="50"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="U5h-er-JqC"/>
+                                    <constraint firstAttribute="height" constant="50" id="lne-Bw-9U0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="⊖">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="teamOneMinus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vpg-Z3-3p1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIY-U8-QZu">
+                                <rect key="frame" x="57" y="112" width="125" height="125"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="dou-Fd-Wy4"/>
+                                    <constraint firstAttribute="width" constant="125" id="tNl-uZ-M3U"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <state key="normal" title="⊕">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="teamOneScore:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L71-av-rbV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUZ-3C-TDP">
+                                <rect key="frame" x="611" y="252" width="50" height="50"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="IgP-GQ-es7"/>
+                                    <constraint firstAttribute="height" constant="50" id="c2U-po-Z2U"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="⊖">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="teamTwoMinus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="97i-GL-yNu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CwV-CS-FT8">
+                                <rect key="frame" x="346" y="172" width="45" height="70"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <state key="normal" title="⇄">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="switchSidesAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="smv-2r-mNx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.12624289772727271" green="0.12624289772727271" blue="0.12624289772727271" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="CwV-CS-FT8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0wS-4C-FgC"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hBA-KO-xOo" secondAttribute="bottom" constant="20" id="5P3-12-W29"/>
+                            <constraint firstItem="p4W-cZ-9b4" firstAttribute="top" secondItem="aIY-U8-QZu" secondAttribute="bottom" constant="15" id="5z0-ue-Fdl"/>
+                            <constraint firstItem="Vw6-vM-Z1z" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="AdK-Zb-HNw"/>
+                            <constraint firstItem="DYg-hJ-mvb" firstAttribute="centerX" secondItem="Vw6-vM-Z1z" secondAttribute="centerX" id="DEv-aW-gWx"/>
+                            <constraint firstItem="aIY-U8-QZu" firstAttribute="top" secondItem="h0r-mx-ZVD" secondAttribute="bottom" constant="30" id="Eal-6H-wcV"/>
+                            <constraint firstItem="hBA-KO-xOo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NGk-cI-0fM"/>
+                            <constraint firstItem="UUZ-3C-TDP" firstAttribute="top" secondItem="DYg-hJ-mvb" secondAttribute="bottom" constant="15" id="Q4a-lB-UWE"/>
+                            <constraint firstItem="UUZ-3C-TDP" firstAttribute="centerX" secondItem="DYg-hJ-mvb" secondAttribute="centerX" id="R3Z-oK-zQ9"/>
+                            <constraint firstItem="Vw6-vM-Z1z" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="10" id="RjS-bE-ds2"/>
+                            <constraint firstItem="h0r-mx-ZVD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="UrO-VC-Y0a"/>
+                            <constraint firstItem="aIY-U8-QZu" firstAttribute="centerX" secondItem="h0r-mx-ZVD" secondAttribute="centerX" id="bGt-Br-Gmj"/>
+                            <constraint firstItem="DYg-hJ-mvb" firstAttribute="top" secondItem="Vw6-vM-Z1z" secondAttribute="bottom" constant="30" id="bhk-n3-G4h"/>
+                            <constraint firstItem="7uK-1M-Iy6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g1w-Is-R1x"/>
+                            <constraint firstItem="p4W-cZ-9b4" firstAttribute="centerX" secondItem="aIY-U8-QZu" secondAttribute="centerX" id="hmc-9R-rEB"/>
+                            <constraint firstItem="CwV-CS-FT8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="m58-i7-sWq"/>
+                            <constraint firstItem="h0r-mx-ZVD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="oHk-uN-CJh"/>
+                            <constraint firstItem="7uK-1M-Iy6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="wXS-Xi-Gzn"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="TeamOneMinus" destination="p4W-cZ-9b4" id="3ST-nu-9Rv"/>
+                        <outlet property="TeamOneName" destination="8bC-Xf-vdC" id="Bjq-B2-yB4"/>
+                        <outlet property="TeamTwoMinus" destination="p4W-cZ-9b4" id="Pzg-IM-7Kl"/>
+                        <outlet property="TeamTwoName" destination="Vw6-vM-Z1z" id="1wP-qJ-iWF"/>
+                        <outlet property="oopsBtn" destination="hBA-KO-xOo" id="YoC-oB-V46"/>
+                        <outlet property="setNumber" destination="7uK-1M-Iy6" id="mec-YY-pD7"/>
+                        <outlet property="switchSides" destination="CwV-CS-FT8" id="byn-Zh-ISd"/>
+                        <outlet property="teamOneAdd" destination="aIY-U8-QZu" id="z6V-oa-7SZ"/>
+                        <outlet property="teamOneMinus" destination="p4W-cZ-9b4" id="ZZo-Jt-hf0"/>
+                        <outlet property="teamOneName" destination="h0r-mx-ZVD" id="vKV-3r-oyb"/>
+                        <outlet property="teamTwoAdd" destination="DYg-hJ-mvb" id="4lz-vl-0No"/>
+                        <outlet property="teamTwoMinus" destination="UUZ-3C-TDP" id="CiG-H7-o0T"/>
+                        <outlet property="teamTwoName" destination="Vw6-vM-Z1z" id="g9e-v5-IEL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="304"/>
+        </scene>
+    </scenes>
+</document>
